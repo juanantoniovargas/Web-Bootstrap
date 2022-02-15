@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Fantasy X</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="color1">
+    <div id="wrapper" class="container color3">
+
+        <!-- BARRA DE NAVEGACIÓN -->
+
+        <nav class="navbar navbar-expand-lg navbar-light color2 sticky-top">
+          <div class="container-fluid">
+            <a class="navbar-brand d-flex gap-2 align-items-center justify-content-center" href="#hero">
+              <img src="./images/logo.png" alt="imagen del juego" height="50" width="130" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#galeria">Galería</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#personajes">Personajes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#historia">Historia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#gameplay">Gameplay</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- HERO SECTION CON CAROUSEL -->
+
+        <section id="hero">
+
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/carousel2.jpg" class="d-block w-100" alt="logo">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/carousel1.jpg" class="d-block w-100" alt="tidus">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/carousel3.jpg" class="d-block w-100" alt="barco">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </section>
+
+        <!-- SECCIÓN GALERÍAS DIVIDIDA EN COLUMNAS -->
+
+        <section id="galeria">
+
+          <h1 class="text-center p-3">Galeria</h1>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                      
+                      <img src="./images/img1.jpg" class="card-img-top" alt="imagen1">
+                      <img src="./images/img2.jpg" class="card-img-top" alt="imagen2">
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                      <img src="./images/img3.jpg" class="card-img-top" alt="imagen3">
+                      <img src="./images/img4.jpg" class="card-img-top" alt="imagen4">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN PERSONAJES CON CARDS -->
+
+        <section id="personajes" class="p-4">
+            <h1 class="text-center">Personajes</h1>
+            <div class="row">
+              <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="card" style="width: 18rem;">
+                <img src="./images/Tidus.png" class="card-img-top" alt="tidus">
+                  <div class="card-body">
+                    <h5 class="card-title">Tidus</h5>
+                    <p class="card-text">Tidus es un joven de 17 años, el mejor jugador de blitzbol de los Zanarkand Abes, deporte y equipo en el que tiene un gran futuro.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      Ver más
+                    </button>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1Label" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModal1Label">Tidus</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body d-flex justify-content-center">
+                            <img src="./images/modal1.jpg" alt="tidus">
+                          </div>
+                          <div class="modal-footer">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="card" style="width: 18rem;">
+                <img src="./images/Yuna.png" class="card-img-top" alt="yuna">
+                  <div class="card-body">
+                    <h5 class="card-title">Yuna</h5>
+                    <p class="card-text">Yuna tiene el pelo castaño, la piel pálida y sufre heterocromía, ya que sus ojos son de diferente color: Uno azul y el otro verde.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                      Ver más
+                    </button>
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModal2Label">Yuna</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body d-flex justify-content-center">
+                            <img src="./images/modal2.jpg" alt="Yuna">
+                          </div>
+                          <div class="modal-footer">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="card" style="width: 18rem;">
+                  <img src="./images/Auron.png" class="card-img-top" alt="auron">
+                  <div class="card-body">
+                    <h5 class="card-title">Auron</h5>
+                    <p class="card-text">Es considerado "el mejor guardián de todos", que derrumbó a Sinh con Braska, el padre de Yuna y con Jecht, padre de Tidus.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                      Ver más
+                    </button>
+                    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModal3Label" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModal3Label">Auron</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body d-flex justify-content-center">
+                            <img src="./images/modal3.jpg" alt="auron">
+                          </div>
+                          <div class="modal-footer">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="card" style="width: 18rem;">
+                  <img src="./images/Wakka.png" class="card-img-top" alt="wakka">
+                  <div class="card-body">
+                    <h5 class="card-title">Wakka</h5>
+                    <p class="card-text">Wakka era un joven de 23 años, capitán del equipo Besaid Aurochs, pero decidió retirarse para dedicarse a ser guardián de Yuna.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      Ver más
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Wakka</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body d-flex justify-content-center">
+                            <img src="./images/modal4.jpg" alt="wakka">
+                          </div>
+                          <div class="modal-footer">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <!-- SECCION HISTORIA EN ACCORDION  -->
+
+        <section id="historia">
+
+          <h1 class="text-center p-3">Historia</h1>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  1º Parte:
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Tidus era un joven jugador de blitzball. Era la estrella de su equipo, los Zanarkand Abes, que era el mejor equipo de Zanarkand.
+
+                  Los hechos del juego empiezan el día en que Tidus va a jugar un partido contra los Zanarkand Duggles. Ese día, se disputa el primer puesto de "La Copa Jecht", el torneo más importante de la ciudad que, además, lleva el nombre del padre de Tidus: Jecht, el mejor jugador de todos los tiempos. Tidus detestaba a su padre, porque siempre le corregía en todo, le insultaba y bebía. También era porque, cuando él era pequeño, cuando aparecía Jecht su madre le ignoraba. Sólo tenía ojos para su padre. Y Tidus le tenía rencor. Entonces, un día Jecht fue a entrenar al mar y desapareció. Y con ello, su madre perdió las ganas de vivir y murió. Por todo eso, Tidus odio profundamente a su padre, o "viejo" como se le refiere durante la trama.
+
+                  Mientras juegan, el estadio explota, y todo el mundo sale corriendo. Mientras huye, Tidus ve a Auron, que era un amigo de su padre que empezó a cuidar de él cuando éste desapareció. Auron le entrega una espada en nombre de su padre, y empiezan a luchar contra unos extraños bichos que se desprenden de un monstruo enorme: Sinh.
+
+                  Tras una larga lucha, Auron lleva a Tidus hasta Sinh, y el monstruo les engulle.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  2º Parte:
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Cuando Tidus despierta, se encuentra completamente sólo en Spira, más concretamente en unas ruinas desconocidas: las Ruinas del Templo de Baaj. Fue a explorar y se cayó al agua por un puente que se derrumbó. Entonces se tiene que enfrentar a un enorme monstruo guardián Josguein y pierde el conocimiento. Se despierta dentro de un edificio en ruinas y, como tiene frío, decide ir a buscar algo para hacer fuego. Hace en el centro una hoguera con unas flores secas, pero con la mala suerte de nuestro protagonista, esta hoguera atrae a un monstruo que le ataca.
+
+                  Mientras lucha, aparecen unos misteriosos personajes liderados por una chica. La joven ayuda a Tidus a deshacerse del monstruo, y luego se pone a hablar con sus compañeros en una extraña lengua. Los chicos intentan matar a Tidus, pero ella lo impide y lo deja inconsciente, dándole un puñetazo en el estómago.
+
+                  Cuando recupera el conocimiento, Tidus, se encuentra en el barco Zalvage con los desconocidos. Los extraños le ofrecen a Tidus cobijo, a cambio de que éste les ayude a explorar un barco que han encontrado en el fondo del mar. Pero como Tidus no hablaba el idioma de los demás, la chica empezó a traducirle. Tidus aceptó el trato, y después de hacer lo que le pidieron (enfrentándose a otro monstruo terrible, cómo no), la misteriosa chica y él mantuvieron una conversación: la joven enmascarada se llama Rikku y todos ellos son Albhed.
+
+                  Tidus le cuenta lo que le pasó en Zanarkand, y ella dice que Zanarkand son ruinas desde mil años atrás. Tidus queda muy sorprendido, y Rikku le dice que es una ciudad sagrada. Además, le comenta que si le dice a alguien de dónde es puede armar un buen lío. Nada más decirle esto, aparece Sinh y Tidus cae del barco, y así se separa de Rikku.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  3º Parte:
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Tidus vuelve a perder el conocimiento, y cuando despierta, está en el mar de una soleada isla: la Isla Besaid. Allí, mientras flota en el agua, un balón de blitzball le golpea, y él se lo devuelve a sus dueños (que están en la playa) con un chut impresionante. Los dueños del balón, eran un equipo: los Besaid Aurochs, y por suerte para Tidus, el capitán del equipo le ve y le ficha. El capitán, es Wakka, un joven que le dice a Tidus lo mismo sobre Zanarkand: que son ruinas y que es una ciudad sagrada para la religión y el Dogma de Yevon.
+
+                  Tras esto, le lleva a rezar para que se cure, porque según Wakka, que diga que es de Zanarkand, son delirios porque ha estado cerca de Sinh y tiene su toxina. Llegan al templo, y Tidus empieza a ver que Spira es muy diferente a su ciudad natal: son muy religiosos, no utilizan máquinas... Aunque lo que más le llama la atención es la religión y su Dogma, entonces le pregunta a Wakka que qué es. Por lo visto el Dogma es una serie de normas que el Clero le impone a la gente de Spira para que no peque, y así, Sinh desaparecerá y volverá a renacer.
+
+                  Tidus se entera de lo que son los invocadores, y también se entera de que hay una desde hace horas en la Cámara del Orador, lo cual es peligroso. Entonces, Tidus irrumpe en la cámara, a pesar de que está prohibido, y conoce a la invocadora y a sus guardianes: Yuna, Lulu y Kimahri, respetivamente, además Wakka también es su guardián .
+
+                  Yuna no es como Tidus esperaba: el esperaba a una "vieja", y Yuna, tenía en realidad la misma edad que Tidus, 17 años. Empiezan a hablar y entablan amistad, y antes de despedirse, Yuna comenta que irán en el mismo barco: Tidus va con Wakka al campeonato de Blitzball y Yuna empieza su peregrinaje.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  4º Parte:
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Mientras hablan en el barco, Yuna le comenta a Tidus que ella cree que él es de Zanarkand, porque uno de los guardianes de su padre también lo era: Jecht. Tidus dice que su padre se llama Jecht, y la fecha con la desaparición de éste, y con su llegada a Spira coinciden. Los dos se quedan sorprendidos por la coincidencia, y entonces llega Sinh y ataca al barco.
+
+                  Tras el ataque todo el mundo está a salvo, pero Sinh ha destrozado la isla de Kilika. El grupo hace un alto en esta isla para que Yuna consiga un eón en su templo y, de paso, aprovechan para que haga un envío, para que los fallecidos puedan descansar en paz. Rezan en el templo, consiguen un eón, y ponen rumbo a Luca, ciudad donde se va a disputar "La Copa Yevon", el torneo de blitzball más importante del momento.
+
+                  Al ser un acontecimiento tan importante, van celebridades de toda Spira, entre ellas el jefe de Spira, el venerable Yo Mika, el cual presenta a un nuevo personaje: Seymour Guado, un guado que se acaba de convertir en uno de los venerables. Ganan el torneo, pero con dificultades, ya que los Albhed raptaron a Yuna mientras jugaban, y tuvieron que rescatarla.
+
+                  Lo curioso, es que durante el torneo, aparece Auron, y habla con Tidus. Éste le explica que Jecht, es Sinh, y que quiere Tidus le mate. Tidus se queda en sin palabras, y decide acompañar a Auron (que pide a Yuna ser su guardián) para matar a Sinh.
+
+                  Siguen su camino sin complicaciones, hasta que llegan a la Senda de las Rocas Hongo, donde se va a producir una batalla contra Sinh: la Operación Mi'ihen. El caso es que no les dejan pasar, y como Yuna debe seguir su peregrinaje, Seymour intiviene para que les dejen pasar, y les invita a ver la batalla.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  5º Parte
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  La batalla resulta ser un desastre, y mueren prácticamente todos los Legionarios. Algo abatidos, siguen adelante, y se dirigen al Río de la Luna.
+
+                  Una vez en el río, deciden tomar un shupaf, que les lleva a Guadosalam (hogar de los Guado) y Seymour, les invita a cenar. En la visita, éste le pide a Yuna que se case con él, y ella que piensa que casarse alegrará a la gente de Spira, decide pensárselo en el Etéreo, donde viven los muertos.
+
+                  Allí, medita mientras ve a los espíritus de sus padres, y cuando se van aparece el espíritu de Jyscal que le da una esfera a Yuna. Van en busca de Seymour, que está en el templo de Macalania, y en el camino, Yuna ve el contenido de la esfera, que la desvela que el asesino de Jyscal, ha sido el propio Seymour.
+
+                  Yuna decide enfrentarse a Seymour sola, pero los demás intervienen, y le derrotan, pero no le envían al Etéreo. Tras esto, son calificados de traidores a Yevon.
+
+                  Más tarde Yuna desaparece, y los demás aparecen en la isla Bikanel, hogar de los Albhed, los que supuestamente habían "raptado" a Yuna, para salvarla de su muerte acabando con su peregrinaje. Pero no estaba en Bikanel, estaba en Bevelle, a puento de casarse con Seymour, contra su voluntad.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  6º Parte
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  El grupo la rescata y siguen adelante, al llegar al Monte Gagazet, los ronso la impiden el paso por ser una traidora, pero al final la dejan pasar y la protegen de Seymour, que va en busca de Yuna para ser su orador, para poder convertirse en Sinh.
+
+                  Le derrotan de nuevo, y, finalmente, llegan a Zanarkand. Es allí, dónde Yunalesca le explica a Yuna que debe elegir a un orador, para que pueda luchar contra Sinh, y en adición, le explica que éste es eterno, y que revivirá siempre, aunque sea derrotado.
+
+                  Yuna, conmocionada por la noticia, decide no sacrificarse y se enfrenta a Yunalesca, junto a sus compañeros. Al final, después de mucho esfuerzo, dan fin con ella, y buscan una manera para derrotar a Sinh para siempre. Para esto, visitan al orador de Bevelle, y, es él, el que les cuenta que Sinh es una mera "coraza" que usa para protegerse Yu Yevon.
+
+                  Después de pensarlo, se dan cuenta de que Sinh se calma con el Himno de Yevon (Himn of the Fayth). Así que piden ayuda y mandan a una sacerdotisa que vaya predicándole a la gente que "cuando un barco volador cante el Himno de Yevon, cantad con él. Entonces, todos le atacan cuando está calmado, y así, se meten en el interior del monstruo.
+
+                  Ya en el interior de éste, se encuentran otra vez con Seymour, que ha enloquecido completamente, y le derrotan por cuarta y última vez, ya que en ésta le envían al etéreo. Tras una pequeña búsqueda, encuentran a Jecht, al que han de derrotar para llegar hasta Yevon.
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- SECCIÓN GAMEPLAY CON VIDEO -->
+
+        <section id="gameplay">
+
+          <h1 class="text-center p-3">Gameplay</h1>
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-md-6">
+          <div class="d-flex justify-content-center">
+          <iframe width="373" height="205" src="https://www.youtube.com/embed/xv4uSttPFGI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="d-flex justify-content-center">
+          <iframe width="373" height="205" src="https://www.youtube.com/embed/7kgGgdqnfEE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </div>
+      </div>
+  </div>
+
+        </section>
+
+        <!-- FOOTER -->
+
+        <footer class="bg-dark" id="contacto">
+
+          <div class="container py-5">
+            <div class="row py-3">
+              <div class="col-xl-6 col-md-12 py-3">
+                <h4 class="text-center text-light">ABOUT ME</h4>
+                <h5 class="text-center text-light">
+                  <a class="text-reset text-decoration-none" href="https://github.com/juanantoniovargas"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+                </h5>
+                <h5 class="text-center text-light">
+                  <a class="text-reset text-decoration-none" href="mailto:juanantonio.vargas.fp@iescampanillas.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> Correo</a>
+                </h5>
+              </div>
+              <div class="col-xl-3 col-md-12 py-3">
+                <h4 class="text-center text-light">ABOUT THE HIGHSCHOOL</h4>
+                <h5 class="text-center text-light">
+                  <a class="text-reset text-decoration-none" href="https://fp.iescampanillas.com/"><i class="fa fa-internet-explorer" aria-hidden="true"></i> Web</a>
+                </h5>
+                <h5 class="text-center text-light">
+                  <a class="text-reset text-decoration-none" href="https://github.com/IESCampanillas/indice-fp-ies-campanillas"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+                </h5>
+                <h5 class="text-center text-light">
+                  <a class="text-reset text-decoration-none" href="https://twitter.com/fpiescampa"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+                </h5>
+              </div>
+              
+            </div>
+          </div>
+
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
